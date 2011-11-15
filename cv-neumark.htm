@@ -48,7 +48,7 @@ DAMAGE.
 <link rel="stylesheet" type="text/css" href="cv-neumark.css" />
 <!--}}}-->
 <!--PRE-HEAD-END-->
-<title> Curriculum vitae - Peter Neumark </title>
+<title> Interactive Resum&amp;#233; - Click on links to get more details. </title>
 <style id="styleArea" type="text/css">
 #saveTest {display:none;}
 #messageArea {display:none;}
@@ -514,10 +514,7 @@ Also see AdvancedOptions</pre>
 </div>
 <!--POST-SHADOWAREA-->
 <div id="storeArea">
-<div title="Associate Professor" modifier="YourName" created="200801300000" modified="201111151319" tags="experience" url="http://en.wikipedia.org/wiki/Vassar_College" org="Vassar College" dtend="19430901" dtstart="19310801" location="Poughkeepsie, NY" changecount="1">
-<pre>Mathematics lecturer.</pre>
-</div>
-<div title="BA, Mathematics and Physics" modifier="Paul Downey" created="200801300000" tags="education" url="http://en.wikipedia.org/wiki/Vassar_College" org="Vassar College" dtend="19280701" location="Poughkeepsie, New York">
+<div title="BA, Mathematics and Physics" modifier="Paul Downey" created="200801300000" tags="education" location="Poughkeepsie, New York" dtend="19280701" org="Vassar College" url="http://en.wikipedia.org/wiki/Vassar_College">
 <pre>Graduated [[Phi Beta Kappa|http://en.wikipedia.org/wiki/Phi_Beta_Kappa_Society]]</pre>
 </div>
 <div title="BackstageTiddlersPlugin" modifier="JeremyRuston" created="200802280000" tags="systemConfig excludeLists excludeSearch">
@@ -548,6 +545,9 @@ config.backstageTasks.push(&quot;tiddlers&quot;);
 
 } //# end of 'install only once'
 //}}}</pre>
+</div>
+<div title="CPlusPlus" modifier="YourName" created="201111152214" changecount="1">
+<pre>STUB</pre>
 </div>
 <div title="Caveat" modifier="Paul Downey" created="200811021615" tags="caveat">
 <pre>Warning!! This is an Alpha-quality, incomplete version of ~TiddlyResume</pre>
@@ -598,19 +598,24 @@ Error: #f88
 
 }}}</pre>
 </div>
-<div title="DefaultTiddlers" modifier="YourName" created="200811021624" modified="201111151545" changecount="2">
+<div title="DefaultTiddlers" modifier="YourName" created="200811021624" modified="201111152203" changecount="5">
 <pre>[[Profile]]
 [[ExperienceSection]]
 [tag[experience]] [sort[-dtstart]]
+[[Technology]]
+[[TechnologyContents]]
 [[EducationSection]]
 [tag[education]] [sort[-dtend]]
-[[TechnologySection]]
-[tag[technology]]</pre>
+</pre>
 </div>
-<div title="EducationSection" modifier="Paul Downey" created="200811021615" tags="educationSection section" displayed="Education" section="education">
+<div title="EducationSection" modifier="Paul Downey" created="200811021615" tags="educationSection section" section="education" displayed="Education">
 <pre></pre>
 </div>
-<div title="ExperienceSection" modifier="YourName" created="200811021615" modified="201111151317" tags="experienceSection section" displayed="Professional experience" section="experience" changecount="1">
+<div title="Erlang" modifier="YourName" created="201111152118" modified="201111152207" tags="inline technology" changecount="7">
+<pre>I started programming in Erlang 3 years ago.
+Since then, I have contributed the [[erlang json protocol implementation for Apache Thrift|https://github.com/apache/thrift/blob/trunk/lib/erl/src/thrift_json_protocol.erl#L20]], as well as a [[project|https://github.com/postlock/thrift-over-socketio]] which enables RPC calls in both directions between the browser and webserver using an erlang version of [[socket.io|http://socket.io/]].</pre>
+</div>
+<div title="ExperienceSection" modifier="YourName" created="200811021615" modified="201111152123" tags="experienceSection section" changecount="3" section="experience" displayed="Professional experience">
 <pre></pre>
 </div>
 <div title="FadingMessagesPlugin" modifier="PaulDowney" created="200812172121" tags="excludeLists excludeSearch" changecount="1">
@@ -679,7 +684,7 @@ version.extensions.FadingMessagesPlugin = {installed:true};
 		{
 			var me = config.extensions.FadingMessages;
 			return createTiddlyButton(createTiddlyElement(e,&quot;span&quot;,null,&quot;messageClear&quot;),
-				&quot;×&quot;,&quot;&quot;,
+				&quot;&#215;&quot;,&quot;&quot;,
 				function(){me.clearMessageBox(e);});
 		},
 		_displayMessage: displayMessage,
@@ -824,8 +829,14 @@ Date.prototype.dayUTCSuffix = function()
 
 //}}}</pre>
 </div>
-<div title="Graduated" modifier="Paul Downey" created="200801300000" tags="education" url="http://en.wikipedia.org/wiki/Wardlaw-Hartridge" org="Hartridge School" dtend="19250701" location="Plainfield, NJ">
+<div title="Graduated" modifier="Paul Downey" created="200801300000" tags="education" location="Plainfield, NJ" dtend="19250701" org="Hartridge School" url="http://en.wikipedia.org/wiki/Wardlaw-Hartridge">
 <pre></pre>
+</div>
+<div title="Java" modifier="YourName" created="201111152214" changecount="1">
+<pre>STUB</pre>
+</div>
+<div title="JavaScript" modifier="YourName" created="201111152209" tags="inline tech" changecount="1">
+<pre>I have been programming javascript on-and-off for 10 years now.</pre>
 </div>
 <div title="LinkMakerPlugin" modifier="PhilHawksowrth" created="200712030000" tags="excludeLists excludeSearch systemConfig">
 <pre>/***
@@ -918,11 +929,11 @@ version.extensions.LinkMakerPlugin = {installed:true};
 } //# end of 'install only once'
 //}}}</pre>
 </div>
-<div title="MA Mathematics and Physics" modifier="Paul Downey" created="200801300000" tags="education" url="http://en.wikipedia.org/wiki/Yale_University" org="Yale University" dtend="19280701" location="New Haven, CT">
+<div title="MA Mathematics and Physics" modifier="Paul Downey" created="200801300000" tags="education" location="New Haven, CT" dtend="19280701" org="Yale University" url="http://en.wikipedia.org/wiki/Yale_University">
 <pre></pre>
 </div>
 <div title="MainMenu" modifier="YourName" created="200709041658" modified="201111151349" tags="excludeLists" changecount="1">
-<pre>&lt;&lt;saveChanges&gt;&gt;&lt;&lt;slider chkSliderTiddlyResumePanel TiddlyResume 'help»' 'TiddlyResume help'&gt;&gt;</pre>
+<pre>&lt;&lt;saveChanges&gt;&gt;&lt;&lt;slider chkSliderTiddlyResumePanel TiddlyResume 'help&#187;' 'TiddlyResume help'&gt;&gt;</pre>
 </div>
 <div title="MarkupPreHead" modifier="YourName" created="201111151357" changecount="1">
 <pre>&lt;!--{{{--&gt;
@@ -1014,26 +1025,32 @@ version.extensions.Microformat = {installed:true};
 } //# end of 'install only once'
 //}}}</pre>
 </div>
+<div title="OpenSource" modifier="YourName" created="201111152121" modified="201111152213" tags="inline" changecount="2">
+<pre>I am a big proponent of using open source software where applicable.
+I am an active member of the [[TiddlySpace|http://www.tiddlyspace.com]], and have release open source code in [[Erlang]], [[Java]] and [[JavaScript]].</pre>
+</div>
 <div title="OptionsPanel" modifier="PhilHawksworth" created="200709111032" modified="200709111152" tags="excludeLists options">
 <pre>These interface options for customising TiddlyResume are saved in your browser:
 
 &lt;&lt;option chkAnimate&gt;&gt; EnableAnimations</pre>
 </div>
-<div title="PageTemplate" modifier="YourName" created="200709041656" modified="201111151339" tags="excludeLists" changecount="4">
+<div title="PageTemplate" modifier="YourName" created="200709041656" modified="201111152203" tags="excludeLists" changecount="7">
 <pre>&lt;!--{{{--&gt;
 &lt;div&gt;	
-	&lt;div id='controlBar' tiddler='MainMenu' refresh='content'&gt;&lt;/div&gt;
 	&lt;div id='header'&gt;&lt;span class='siteTitle' refresh='content' tiddler='SiteTitle'&gt;&lt;/span&gt;&lt;br /&gt;
 &lt;span class='siteSubtitle' refresh='content' tiddler='SiteSubtitle'&gt;&lt;/span&gt;&lt;/div&gt;
 	&lt;div id='messageArea'&gt;&lt;/div&gt;
 	&lt;div id='mainArea'&gt;&lt;div id='displayArea'&gt;&lt;div id='tiddlerDisplay' class='hresume'&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;!--}}}--&gt;</pre>
 </div>
-<div title="PhD Mathematics" modifier="Paul Downey" created="200801300000" tags="education" url="http://en.wikipedia.org/wiki/Yale_University" org="Yale University" dtend="19340701" location="New Haven, CT">
+<div title="PhD Mathematics" modifier="Paul Downey" created="200801300000" tags="education" location="New Haven, CT" dtend="19340701" org="Yale University" url="http://en.wikipedia.org/wiki/Yale_University">
 <pre></pre>
 </div>
-<div title="Profile" modifier="YourName" created="200801300000" modified="201111151537" tags="profile" photo="photo.jpg" postal_code="1084" region="Hungary" additional_name="" url="http://www.peterneumark.com" street_address="Rákóczi tér 7." family_name="Neumark" given_name="Peter" locality="Budapest" phone="+36 30 77 33 903" summary_title="About me" honorific_prefix="" email="neumark.peter@gmail.com" honorific_suffix="" nickname="" changecount="5">
+<div title="Profile" modifier="YourName" created="200801300000" modified="201111152211" tags="profile" changecount="14" nickname="" honorific_suffix="" email="neumark.peter@gmail.com" honorific_prefix="" summary_title="About me" phone="+36 30 77 33 903" locality="Budapest" given_name="Peter" family_name="Neumark" street_address="R&#225;k&#243;czi t&#233;r 7." url="http://www.peterneumark.com" additional_name="" region="Hungary" postal_code="1084" photo="https://lh6.googleusercontent.com/-uf2igbi_T2I/AAAAAAAAAAI/AAAAAAAAAAA/RvpcTGE6Ulo/photo.jpg?sz=80">
 <pre>I was born in [[Budapest]], Hungary on October 2, 1984. I have lived in the [[United States]] for ten years, so I speak English fluently. My professional interests include [[recommendation systems]], peer-to-peer networking, and functional programming languages. In my free time I enjoy hiking and playing the guitar.</pre>
+</div>
+<div title="Researcher" modifier="YourName" created="200801300000" modified="201111152214" tags="experience" changecount="6" location="Budapest, Hungary" dtstart="20071020" dtend="20100201" org="SZTAKI - Hungarian Computer Science Research Center" url="http://www.sztaki.hu/?en">
+<pre>I worked at the [[data mining and web search group|http://www.sztaki.hu/department/INFOLAB/publications/]] within SZTAKI. During my stay, I created the [[Giraffe|http://code.google.com/p/giraffe-etl/]] [[ETL|http://en.wikipedia.org/wiki/Extract,_transform,_load]] tool in [[Java]], which is used to populate data warehouses to this day. I was also a key contributor to the [[C++|CPlusPlus]]-based Knockout recommendation system, which is the topic of my [[Master's Thesis|http://dl.dropbox.com/u/1404310/diploma.pdf]].</pre>
 </div>
 <div title="SectionItemPlugin" modifier="PaulDowney" created="200812121300" tags="systemConfig excludeLists excludeSearch">
 <pre>/***
@@ -1107,21 +1124,25 @@ TiddlyWiki.prototype.filterTiddlers = function(filter)
 }
 //}}}</pre>
 </div>
-<div title="SiteSubtitle" modifier="YourName" modified="201111151444" tags="excludeLists excludeSearch" changecount="2">
-<pre>Peter Neumark</pre>
+<div title="SiteSubtitle" modifier="YourName" modified="201111152024" tags="excludeLists excludeSearch" changecount="3">
+<pre>Click on links to get more details.</pre>
 </div>
-<div title="SiteTitle" modifier="YourName" created="200811021523" modified="201111151255" changecount="1">
-<pre>Curriculum vitae</pre>
+<div title="SiteTitle" modifier="YourName" created="200811021523" modified="201111152022" changecount="2">
+<pre>Interactive Resum&#233;</pre>
 </div>
 <div title="SiteUrl" modifier="Paul Downey" created="200811021615" modified="200811171722">
 <pre>http://tiddlyresume.com</pre>
 </div>
-<div title="Software developer" modifier="YourName" created="200801300000" modified="201111151544" tags="experience" url="http://www.ericsson.com" org="Ericsson RnD" dtend="20110318" dtstart="20100201" section="experience" location="Budapest, Hungary" changecount="5">
-<pre>Developed new features and performed maintenance work in [[Erlang]] on the Integrated Site Media Gateway product.</pre>
+<div title="Software developer" modifier="YourName" created="200801300000" modified="201111152143" tags="experience" changecount="8" location="Budapest, Hungary" section="experience" dtstart="20100201" dtend="20110318" org="Ericsson RnD" url="http://www.ericsson.com">
+<pre>Developed new features and performed maintenance work in [[Erlang]] on the Integrated Site [[Media Gateway|http://en.wikipedia.org/wiki/Media_Gateway]] product. Main contributions include maintenance and documentation of [[M3UA|http://en.wikipedia.org/wiki/M3UA]] functionality and numerous bugfixes.</pre>
 </div>
-<div title="StyleSheet" modifier="YourName" created="200709041741" modified="201111151522" tags="excludeLists" changecount="13">
+<div title="StyleSheet" modifier="YourName" created="200709041741" modified="201111152133" tags="excludeLists" changecount="17">
 <pre>div.description a.externalLink {
   text_decoration: none;
+}
+
+.button {
+    border: 1px solid #777;
 }
 
 body {
@@ -1256,9 +1277,9 @@ a:hover {
 		display: block;
 		color: #fff;
 		background-color: #000;
-		padding: 0px 0px 20px 0px;
-		font-size: 2.5em;
-		font-weight: bold;
+		padding: 0px 0px 2px 0px;
+		font-size: 1em;
+		/*font-weight: bold;*/
                 font-style: italic;
 		letter-spacing: 2px;
 		text-align: center;
@@ -1568,10 +1589,6 @@ a:hover {
 	top: 0;
 	}*/
 
-	.photoframe, photo {
-		display: none;
-	}
-
        .vevent {padding: 4px;}
 </pre>
 </div>
@@ -1815,11 +1832,27 @@ Story.prototype.chooseTemplateForTiddler = function(title,template)
 }
 //}}}</pre>
 </div>
-<div title="Talent Program trainee" modifier="YourName" created="200801300000" modified="201111151333" tags="experience" url="http://www.ericsson.com/careers/student/rd_program" org="Ericsson Global Graduate Program" dtend="20120318" dtstart="20100831" location="Stockholm, Budapest, Vienna" changecount="5">
-<pre>Participated in a leadership training program for talented individuals within Ericsson Research and Development.</pre>
+<div title="Talent Program trainee" modifier="YourName" created="200801300000" modified="201111152208" tags="experience" changecount="15" location="Stockholm, Budapest, Vienna" dtstart="20100831" dtend="20120318" org="Ericsson Global Graduate Program" url="http://www.ericsson.com/careers/student/rd_program">
+<pre>Participated in a leadership training program for talented individuals within Ericsson Research and Development. The program consisted of:
+# A very thorough course on leadership and management skills, covering both the theory and the practice of motivating people, handling conflict within the team and managing ourselves.
+# A 4-month project which resulted in an interactive risk-assessment tool for managers wishing to adopt [[open source|OpenSource]] software tools written mostly in [[JavaScript]] based on [[TiddlySpace|http://www.tiddlyspace.com]].
+# The opportunity to participate in business development for several major telecommunications companies within central Europe over the course of a semester.</pre>
 </div>
-<div title="TechnologySection" modifier="YourName" created="201111151547" changecount="4" section="technology" display="Technology">
+<div title="Technology" modifier="YourName" created="201111152155" tags="section technologySection" changecount="1">
 <pre></pre>
+</div>
+<div title="TechnologyContents" modifier="YourName" created="201111152155" modified="201111152215" tags="technologycontents" changecount="15">
+<pre>&lt;html&gt;&lt;div class=&quot;period&quot; style=&quot;display:inline&quot;&gt;Erlang&lt;/div&gt;&lt;/html&gt;
+&lt;&lt;tiddler Erlang&gt;&gt;
+
+&lt;html&gt;&lt;div class=&quot;period&quot; style=&quot;display:inline&quot;&gt;Javascript&lt;/div&gt;&lt;/html&gt;
+&lt;&lt;tiddler JavaScript&gt;&gt;
+
+&lt;html&gt;&lt;div class=&quot;period&quot; style=&quot;display:inline&quot;&gt;Java&lt;/div&gt;&lt;/html&gt;
+&lt;&lt;tiddler Java&gt;&gt;
+
+&lt;html&gt;&lt;div class=&quot;period&quot; style=&quot;display:inline&quot;&gt;C++&lt;/div&gt;&lt;/html&gt;
+&lt;&lt;tiddler CPlusPlus&gt;&gt;</pre>
 </div>
 <div title="ThemeSwitchRefreshPlugin" modifier="PaulDowney" created="200812041000" changecount="2">
 <pre>/***
@@ -1925,12 +1958,15 @@ config.macros.selectTheme.onClickTheme = function(ev)
 |~ItemViewToolbar|+editTiddler|
 |~ItemEditToolbar|+saveTiddler -cancelTiddler deleteTiddler|</pre>
 </div>
-<div title="United States" modifier="YourName" created="201111151539" changecount="1">
+<div title="United States" modifier="YourName" created="201111151539" modified="201111152143" tags="inline" changecount="6">
 <pre>Within the United States, I lived in:
 * Los Angeles, California
 * Buffalo, New York
 * Elkin, North Carolina
-* [[Chapel Hill]], North Carolina</pre>
+* Chapel Hill, North Carolina</pre>
+</div>
+<div title="Web developer" modifier="YourName" created="201111152116" modified="201111152147" tags="experience" org="Geomagic Hungary" location="Budapest, Hungary" url="http://www.geomagic.com/en/" dtstart="20051114" dtend="20071020" changecount="4">
+<pre>As a part-time student job, created the AJAX user interface for an internal testing application.</pre>
 </div>
 <div title="WikifiedMessagesPlugin" modifier="PaulDowney" created="200812191035" tags="excludeLists excludeSearch" changecount="2">
 <pre>/***
@@ -2070,6 +2106,15 @@ version.extensions.WikifiedMessagesPlugin = {installed:true};
 	&lt;h2 macro='view displayed'&gt;&lt;/h2&gt;
 &lt;/div&gt;</pre>
 </div>
+<div title="inlineViewTemplate" modifier="YourName" created="201111152003" modified="201111152006" changecount="3">
+<pre>&lt;!--{{{--&gt;
+&lt;div style=&quot;border:1px solid #777; background-color: #eee; padding: 4px;&quot;&gt;
+&lt;div class='toolbar' macro='toolbar [[ToolbarCommands::ViewToolbar]]'&gt;&lt;/div&gt;
+&lt;div class='title' macro='view title'&gt;&lt;/div&gt;
+&lt;div class='viewer' macro='view text wikified'&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;!--}}}--&gt;</pre>
+</div>
 <div title="locale.en" modifier="Paul Downey" created="200706160000" modified="200707060000" tags="excludeLists excludeSearch" changecount="1">
 <pre>//{{{
 
@@ -2138,7 +2183,7 @@ config.messages.backstage = {
 	&lt;div class=&quot;tags edit&quot; macro=&quot;edit tags&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;</pre>
 </div>
-<div title="profileViewTemplate" modifier="YourName" created="200801300000" modified="201111151535" tags="TiddlyResume excludeSearch" changecount="5">
+<div title="profileViewTemplate" modifier="YourName" created="200801300000" modified="201111151610" tags="TiddlyResume excludeSearch" changecount="7">
 <pre>&lt;div class='toolbar' macro='toolbar [[ToolbarCommands::ProfileViewToolbar]]'&gt;&lt;/div&gt;
 &lt;h2 macro='view title'&gt;&lt;/h2&gt;
 &lt;div class=&quot;profile vcard&quot;&gt;
@@ -2153,8 +2198,8 @@ config.messages.backstage = {
 
 	&lt;/div&gt;
         &lt;div class='web' macro=&quot;LinkMaker type:text display:url linkto:url classname:url&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;email&quot; macro=&quot;view email&quot;&gt;&lt;/div&gt;&lt;br /&gt;
-        &lt;div class=&quot;tel&quot; macro=&quot;view phone&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;tel&quot; macro=&quot;view phone&quot;&gt;&lt;/div&gt;  &lt;div class=&quot;email&quot; macro=&quot;view email&quot;&gt;&lt;/div&gt;&lt;br /&gt;
+
 &lt;/div&gt;
 &lt;h2 macro='view summary_title'&gt;&lt;/h2&gt;
 &lt;div class='summary' macro='view text wikified'&gt;&lt;/div&gt;</pre>
@@ -2165,7 +2210,7 @@ config.messages.backstage = {
 	&lt;div class='edit title' macro='edit displayed'&gt;&lt;/div&gt;
 &lt;/div&gt;</pre>
 </div>
-<div title="sectionViewTemplate" modifier="Paul Downey" created="200801300000" tags="excludeSearch TiddlyResume">
+<div title="sectionViewTemplate" modifier="Paul Downey" created="200801300000" tags="TiddlyResume excludeSearch">
 <pre>&lt;div class='toolbar' macro='toolbar [[ToolbarCommands::SectionViewToolbar]]'&gt;&lt;/div&gt;
 &lt;h2 macro='view title'&gt;&lt;/h2&gt;</pre>
 </div>
@@ -2191,6 +2236,10 @@ educationGroup.setGroupField('section');
 */
 
 //}}}</pre>
+</div>
+<div title="technologycontentsViewTemplate" modifier="YourName" created="201111152156" modified="201111152200" changecount="3">
+<pre>&lt;div class='toolbar' macro='toolbar [[ToolbarCommands::ViewToolbar]]'&gt;&lt;/div&gt;
+&lt;div class='viewer' macro='view text wikified'&gt;&lt;/div&gt;</pre>
 </div>
 </div>
 <!--POST-STOREAREA-->
